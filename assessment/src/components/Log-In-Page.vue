@@ -1,42 +1,61 @@
 <template>
   <div id="log-in-page">
-    <div class="log-in">
-      <div class="col-1">
-        <label>Username:</label>
-        <br />
-        <label>Password:</label>
+    <div class="row log-in">
+      <div class="col-md-4">
+        
       </div>
-      <div class="col-2" id="log-in">
-        <form class="login-form">
+      <div class="col-md-4">
+      <div class="form-group">
+        <form>
+          <label>Username:</label>
           <input
             type="text"
             name="username"
             placeholder="Enter username"
-            class="field"
-            id="password"
-          /><br />
+            class="form-control"
+          />
+          <label>Password:</label>
           <input
             type="password"
             name="password"
             placeholder="Enter password"
-            class="field"
-            id="verify-password"
-          /><br />
-        </form>
-      </div>
-      <input type="submit" v-on:click="verify" /><br />
+            class="form-control"
+            id="password"
+          />
+          <br>
+          <input type="submit" v-on:click="verify" class="btn btn-primary"/><br />
       <p>
         Not a member yet?
         <button @click="$router.push('/registerhere')" class="sign-up">
           Sign-up Here
         </button>
       </p>
+        </form>
+      </div>
+      
     </div>
+    </div>
+    <div class="col-md-4">
+        
+      </div>
   </div>
 </template>
 
 <script>
 
 </script>
+
+<style scoped>
+
+.log-in {
+  margin:10%;
+}
+
+form {
+  border: 2px solid black;
+  padding:20px;
+  border-radius: 10px;
+}
+</style>
 
 

@@ -6,15 +6,15 @@
         alt="questronix-poster" class="poster">
 
         <div class="col-md-12 welcome">
-        <h1 class="text-center">Welcome to Questronix!</h1>
+        <h1 class="text-center title-slide">Welcome to Questronix!</h1>
       </div>
     
     <div class="d-flex justify-content-center overview">
       <div class="overview-text">
         <h2 class="text-center">We make <i>Digital Transformation</i> possible.</h2>
         <p class="text-center">
-          Your trusted business partner for IT solutions and services.Questronix has grown to be one of the largest IT solutions and service
-          providers and systems integrators in the Philippines since 1987 that has earned awards and certificates through its focused
+          Your trusted business partner for IT solutions and services.<br>Questronix has grown to be one of the largest IT solutions and service
+          providers and systems integrators in the Philippines since 1987<br> that has earned awards and certificates through its focused
           professional team of experts.
         </p>
       </div>
@@ -113,5 +113,22 @@ h1 {
     margin-top:20px;
     margin-bottom: 20px;;
 }
+
+@keyframes slide-title {
+  0% {
+    transform: translateY(-60%);
+    opacity: .01;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.title-slide {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out slide-title;
+}
+
 </style>
 

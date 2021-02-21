@@ -65,14 +65,17 @@
               <p><Pencil /> Carlo Coste <Calendar /> November 2019</p>
             </div>
 
+            <div class="embed-responsive embed-responsive-16by9 iframe">
             <iframe
               width="500"
               height="300"
+              class="embed-responsive-item"
               src="https://www.youtube.com/embed/w4OPtFCs_fw"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
+            </div>
             <p class="blog-content text-justify">
               Margaret Heffernan gave a number of great points on her talk about
               The Human Skills We Need in an Unpredictable World. However, the
@@ -174,6 +177,7 @@ export default {
 </script>
 
 <style scoped>
+
 .blog-header {
   background: linear-gradient(rgba(31, 30, 30, 0.6), rgba(31, 30, 30, 0.6)),
     url(https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -181,11 +185,23 @@ export default {
   background-attachment: fixed;
 }
 
+@keyframes compress-title {
+  0% {
+    letter-spacing: 40px;
+    opacity: .5;
+  }
+  100% {
+    letter-spacing: 20px;
+    opacity: 1;
+
+  }
+}
 .blog-head {
   color: white;
   font-size: 500%;
   line-height: 400px;
-  letter-spacing: 10px;
+  letter-spacing: 20px;
+  animation: 1s ease-out compress-title;
 }
 .sidebar {
   height: 300px;
@@ -200,8 +216,10 @@ export default {
   margin-top: 3%;
 }
 
-iframe {
-    margin: 0 150px;
+.iframe {
+  margin: 20px 0px;
 }
+
+
 </style>
 

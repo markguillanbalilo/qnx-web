@@ -1,81 +1,113 @@
 <template>
   <div id="reg-page">
     <div class="container">
-      <div class="page-content">
+      <div class="page-title">
         <h2 class="text-center">Join us!</h2>
-        <div class="row">
-          <div class="col-md-5">
+        <div class="row page-content">
+          <div class="col-md-6">
             <img
               src="https://s3-ap-southeast-1.amazonaws.com/kalibrr-company-assets/images/68TXVU3NP9FCWJGSA3QX-5892d4d6.jpg"
               class="company-photo"
             />
           </div>
-            <div class="col-md-5">
-              <div class="form-group">
-                <form>
-                  <label>Full Name: </label><br />
+          <div class="col-md-5 reg-form">
+            <div class="form-group">
+              <form>
+                <label>Full Name: </label>
+                <input
+                  type="text"
+                  name="first-name"
+                  placeholder="Full Name"
+                  class="form-control"
+                />
+                <label>Gender: </label><br />
+                <div class="form-check form-check-inline">
                   <input
-                    type="text"
-                    name="first-name"
-                    placeholder="Full Name"
-                    required
-                  /><br />
-                  <label>Gender: </label>
-                  <input type="radio" name="gender" label="Male" value="male" />
-                  <label for="male">Male</label>
+                    type="radio"
+                    id="male"
+                    value="male"
+                    class="form-check-input"
+                  />
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
                   <input
                     type="radio"
                     name="gender"
-                    label="Female"
+                    id="female"
                     value="female"
+                    class="form-check-input"
                   />
-                  <label for="male">Female</label><br />
-                  <label>Birth Date: </label><br />
-                  <input type="date" name="birthdate" /><br />
-                  <label>Email Address: </label><br />
+                  <label class="form-check-label" for id="female">Female</label>
+                </div>
+                <br />
+                <label>Birth Date: </label><br />
+                <input type="date" name="birthdate" class="form-control" />
+                <label>Email Address: </label>
+                <input
+                  type="email"
+                  name="email"
+                  label="Email: "
+                  placeholder="Email Address"
+                  class="form-control"
+                />
+                <div class="form-check form-check-inline">
                   <input
-                    type="email"
-                    name="email"
-                    label="Email: "
-                    placeholder="Email Address"
-                    required
+                    type="checkbox"
+                    id="newsletter"
+                    checked
+                    class="form-check-input"
                   />
-                  <input type="checkbox" name="newsletter" checked />
-                  <label for="newsletter">Send me newsletters</label><br />
-                  <label>Mobile Number: </label><br />
-                  <input type="number" name="contact-number" /><br />
-                  <label>Education: </label><br />
+                  <label for="newsletter" class="form-check-label"
+                    >Send me newsletters</label
+                  >
+                </div>
+                <br />
+                <label>Mobile Number: </label>
+                <input
+                  type="number"
+                  name="contact-number"
+                  class="form-control"
+                />
+                <label>Education: </label>
+                <div class="form-group">
                   <select class="education">
                     <option>High School Diploma</option>
                     <option>College Undergraduate</option>
                     <option selected>Bachelor's Degree</option>
                   </select>
-                  <br />
-                  <label>Username: </label><br />
-                  <input
-                    type="text"
-                    name="username"
-                    placeholder="username"
-                    required
-                  /><br />
-                  <label>Password: </label><br />
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="password"
-                    required
-                  /><br />
-                  <input
-                    type="password"
-                    name="verify-password"
-                    id="verify-password"
-                    placeholder="verify password"
-                    required
-                  /><br />
-                  <input type="submit" />
-                </form>
-              </div>
+                </div>
+                <label>Username: </label>
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="username"
+                  class="form-control"
+                />
+                <label>Password: </label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="password"
+                  class="form-control"
+                  required
+                />
+                <input
+                  type="password"
+                  name="verify-password"
+                  id="verify-password"
+                  placeholder="verify password"
+                  class="form-control"
+                  required
+                />
+                <input
+                  type="submit"
+                  class="btn btn-primary"
+                  v-on:click="greet"
+                />
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -83,11 +115,46 @@
   </div>
 </template>
 
+<script>
+export default {
+  el: "#reg-page",
+  methods: {
+    greet: function () {
+      if (
+        document.getElementById("password").value !=
+        document.getElementById("verify-password").value
+      ) {
+        alert("Password does not match!");
+      }
+    },
+  },
+};
+</script>
+
 <style scoped>
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .company-photo {
   width: 100%;
   box-shadow: 10px 10px 10px;
   margin: 5px;
+  vertical-align: middle;
+}
+
+.reg-form {
+  margin-left: 30px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+}
+
+.page-content,
+.page-title {
+  margin-top: 50px;
 }
 </style>
 
