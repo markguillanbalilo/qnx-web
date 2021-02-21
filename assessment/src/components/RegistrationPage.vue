@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="reg-page">
     <div class="container">
       <div class="page-content">
         <h2 class="text-center">Join us!</h2>
@@ -14,20 +14,13 @@
               <div class="form-group">
                 <form>
                   <label>Full Name: </label><br />
-                  <label>Gender: </label><br />
-                  <label>Birth Date: </label><br />
-                  <label>Email Address: </label><br />
-                  <label>Mobile Number: </label><br />
-                  <label>Education: </label><br />
-                  <label>Username: </label><br />
-                  <label>Password: </label><br />
-                  
                   <input
                     type="text"
                     name="first-name"
                     placeholder="Full Name"
                     required
                   /><br />
+                  <label>Gender: </label>
                   <input type="radio" name="gender" label="Male" value="male" />
                   <label for="male">Male</label>
                   <input
@@ -37,7 +30,9 @@
                     value="female"
                   />
                   <label for="male">Female</label><br />
+                  <label>Birth Date: </label><br />
                   <input type="date" name="birthdate" /><br />
+                  <label>Email Address: </label><br />
                   <input
                     type="email"
                     name="email"
@@ -47,19 +42,23 @@
                   />
                   <input type="checkbox" name="newsletter" checked />
                   <label for="newsletter">Send me newsletters</label><br />
+                  <label>Mobile Number: </label><br />
                   <input type="number" name="contact-number" /><br />
+                  <label>Education: </label><br />
                   <select class="education">
                     <option>High School Diploma</option>
                     <option>College Undergraduate</option>
                     <option selected>Bachelor's Degree</option>
                   </select>
                   <br />
+                  <label>Username: </label><br />
                   <input
                     type="text"
                     name="username"
                     placeholder="username"
                     required
                   /><br />
+                  <label>Password: </label><br />
                   <input
                     type="password"
                     name="password"
@@ -87,6 +86,8 @@
 <style scoped>
 .company-photo {
   width: 100%;
+  box-shadow: 10px 10px 10px;
+  margin: 5px;
 }
 </style>
 

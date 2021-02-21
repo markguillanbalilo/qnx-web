@@ -1,5 +1,5 @@
 <template>
-  <div id="blogs">
+  <div id="blogs-page">
     <div class="d-flex justify-content-center blog-header">
       <h1 class="blog-head">BLOG POSTS</h1>
     </div>

@@ -1,10 +1,10 @@
 <template>
-  <div class="log-in-page">
+  <div id="log-in-page">
     <div class="log-in">
       <div class="col-1">
-        <p>Username:</p>
+        <label>Username:</label>
         <br />
-        <p>Password:</p>
+        <label>Password:</label>
       </div>
       <div class="col-2" id="log-in">
         <form class="login-form">
