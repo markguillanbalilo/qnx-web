@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+        <router-view />
     <nav class="navbar" id="navigation">
       <a href=""
         ><img
@@ -15,22 +16,14 @@
         </a>
       </div>
     </nav>
-    <footer>
-      <div row>
-        <div col-md-4>
-          </div>
-        <div col-md-4>
+
+    <footer class="footer">
+        <div class="copyright">
           <p>&#169; Questronix Corporation</p>
-          </div>
-        <div col-md-4>
-          </div>
-
-        </div> 
-
-    </footer>
-
-    <router-view />
+        </div>
+  </footer>
   </div>
+
 </template>
 
 <style scoped>
@@ -39,6 +32,7 @@
 }
 
 .navbar {
+  overflow: hidden;
   background-color: rgb(236, 236, 236);
   position: fixed;
   top: 0;
@@ -56,14 +50,26 @@
 }
 
 .nav-item:hover {
-  cursor:pointer;
-  color:rgb(9, 9, 82);
+  cursor: pointer;
+  color: rgb(9, 9, 82);
   border-bottom: 1px solid rgb(9, 9, 82);
 }
 
 .nav-item:visited {
   border-bottom: 1px solid rgb(9, 9, 82);
-
 }
 
+.footer {
+  overflow: hidden;
+  height:60px;
+  background-color: rgb(22, 22, 22);
+  margin-top:10px;
+}
+
+.copyright {
+  text-align: center;
+  line-height: 60px;
+  color:gray;
+}
+  
 </style>

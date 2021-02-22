@@ -1,8 +1,8 @@
 <template>
   <div id="log-in-page">
     <div class="row log-in">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
+      <div class=" col-md-4"></div>
+      <div class=" col-md-4">
         <div class="form-group">
           <form>
             <label>Username:</label>
@@ -11,6 +11,7 @@
               name="username"
               placeholder="Enter username"
               class="form-control"
+              id="username"
             />
             <label>Password:</label>
             <input
@@ -26,7 +27,7 @@
               v-on:click="verify"
               class="btn btn-primary"
             /><br />
-            <p>
+            <p class="member">
               Not a member yet?
               <button @click="$router.push('/registerhere')" class="sign-up">
                 Sign-up Here
@@ -35,8 +36,8 @@
           </form>
         </div>
       </div>
+      <div class=" col-md-4"></div>
     </div>
-    <div class="col-md-4"></div>
   </div>
 </template>
 
@@ -49,6 +50,27 @@ form {
   border: 2px solid black;
   padding: 20px;
   border-radius: 10px;
+}
+
+@media screen and (max-width:800px) {
+  form {
+    margin-top: 100px;
+    width:100%;
+  }
+  label {
+    font-size:80%;
+  }
+
+  input {
+    font-size:80%;
+  }
+
+  p, button {
+    font-size:90%;
+  }
+
+
+  
 }
 </style>
 

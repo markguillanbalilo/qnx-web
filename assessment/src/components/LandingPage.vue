@@ -27,29 +27,29 @@
       </div>
 
       <div class="row core-values">
-        <div class="col-md-2 text-center">
+        <div class="col-4 col-md-2 text-center">
           <License />
-          <p>Leadership</p>
+          <p class="caption">Leadership</p>
         </div>
-        <div class="col-md-2 text-center">
+        <div class="col-4 col-md-2 text-center">
           <Church />
-          <p>Faith</p>
+          <p class="caption">Faith</p>
         </div>
-        <div class="col-md-2 text-center">
+        <div class="col-4 col-md-2 text-center">
           <Lock />
-          <p>Integrity</p>
+          <p class="caption">Integrity</p>
         </div>
-        <div class="col-md-2 text-center">
+        <div class="col-4 col-md-2 text-center">
           <TrophyAward />
-          <p>Excellence</p>
+          <p class="caption">Excellence</p>
         </div>
-        <div class="col-md-2 text-center">
+        <div class="col-4 col-md-2 text-center">
           <AccountGroup />
-          <p>Teamwork</p>
+          <p class="caption">Teamwork</p>
         </div>
-        <div class="col-md-2 text-center">
+        <div class="col-4 col-md-2 text-center">
           <Handshake />
-          <p>Client First</p>
+          <p class="caption">Client First</p>
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@ h1 {
 }
 
 .core-values {
-  height: 200px;
+  height: 100%;
 }
 .material-design-icon {
   font-size: 500%;
@@ -134,5 +134,33 @@ h1 {
   /* This section calls the slideInFromLeft animation we defined above */
   animation: 1s ease-out slide-title;
 }
+
+@media screen and (max-width:800px) {
+
+  .poster {
+    margin-top: 100px;
+  }
+  .title-slide {
+    font-size: 200%;
+  }
+
+  .overview-text {
+    font-size: 90%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  .material-design-icon {
+    font-size: 250%;
+  }
+
+  .caption {
+    font-size: 90%;
+  }
+  
+}
+
 </style>
 

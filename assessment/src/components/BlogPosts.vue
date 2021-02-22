@@ -133,7 +133,7 @@
           <div class="sidebar">
             <h4>Archives</h4>
             <a href="#">November 2019</a><br />
-            <a href="#">December 2019</a>
+            <a href="#">December 2019</a><br><br>
 
             <h4>Submit your article!</h4>
             <p>
@@ -143,7 +143,7 @@
             </p>
           </div>
 
-          <h4>Follow us:</h4>
+          <h4 class="social">Follow us:</h4>
           <div class="social-links">
             <a href="https://twitter.com/" target="_blank"> <Twitter /></a>
             <a href="https://www.facebook.com/" target="_blank"><Facebook /></a>
@@ -216,6 +216,47 @@ export default {
 
 .iframe {
   margin: 20px 0px;
+}
+
+@media screen and (max-width: 800px){
+  .blog-header {
+    height:300px;
+  }
+  .blog-head {
+    font-size: 200%;
+  }
+
+  h2{
+    font-size: 150%;
+
+  }
+
+  .blog-title {
+    font-size: 80%;
+  }
+
+  .blog-content {
+    font-size: 80%
+  }
+
+  h4 {
+    font-size: 130%;
+  }
+
+  .sidebar {
+    font-size: 80%;
+  }
+
+  .social {
+    font-size: 130%;
+
+  }
+
+  .social-links {
+    font-size: 90%;
+  }
+
+  
 }
 </style>
 

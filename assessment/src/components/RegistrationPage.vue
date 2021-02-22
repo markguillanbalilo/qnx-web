@@ -20,6 +20,7 @@
                 name="first-name"
                 placeholder="Full Name"
                 class="form-control"
+                required
               />
               <label>Gender: </label><br />
               <div class="form-check form-check-inline">
@@ -51,6 +52,7 @@
                 label="Email: "
                 placeholder="Email Address"
                 class="form-control"
+                required
               />
               <div class="form-check form-check-inline">
                 <input
@@ -65,7 +67,7 @@
               </div>
               <br />
               <label>Mobile Number: </label>
-              <input type="number" name="contact-number" class="form-control" />
+              <input type="number" name="contact-number" class="form-control" required />
               <label>Education: </label>
               <div class="form-group">
                 <select class="education">
@@ -105,7 +107,7 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>   
 </template>
 
 <script>
@@ -150,7 +152,7 @@ input[type="submit"] {
 }
 
 .page-title {
-  margin-top: 30px;
+  margin-top: 50px;
   background-color: rgb(9, 9, 66);
   color:azure;
   height: 100px;
@@ -159,7 +161,33 @@ input[type="submit"] {
 
 .title {
   line-height: 100px;
+  
 }
+
+@media screen and (max-width:800px) {
+  .page-title {
+    margin-top: 100px;
+  }
+
+  .title {
+    font-size: 150%;
+  }
+
+  .company-photo {
+    margin-top: 40px;
+  }
+
+  form, input {
+    font-size: 80%;
+  }
+
+  form {
+    margin-left: 0;
+  }
+  
+}
+
+
 </style>
 
 
