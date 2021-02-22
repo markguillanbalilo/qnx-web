@@ -138,7 +138,7 @@ h1 {
 @media screen and (max-width:800px) {
 
   .poster {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .title-slide {
     font-size: 200%;

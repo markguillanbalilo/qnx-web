@@ -220,10 +220,11 @@ export default {
 
 @media screen and (max-width: 800px){
   .blog-header {
-    height:300px;
+    height:250px;
   }
   .blog-head {
     font-size: 200%;
+    line-height: 300px;
   }
 
   h2{

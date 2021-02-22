@@ -166,11 +166,13 @@ input[type="submit"] {
 
 @media screen and (max-width:800px) {
   .page-title {
-    margin-top: 100px;
+    margin-top: 50px;
+    height: 90px;
   }
 
   .title {
     font-size: 150%;
+    line-height: 90px;
   }
 
   .company-photo {

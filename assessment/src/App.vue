@@ -71,5 +71,25 @@
   line-height: 60px;
   color:gray;
 }
+
+@media screen and (max-width:800px) {
+  .logo {
+    display: none;
+  }
+
+  .navbar {
+    height: 50px;
+  }
+
+  .nav-item {
+    float:left;
+  }
+
+  .navbar a {
+    font-size: 80%;
+    
+  }
+  
+}
   
 </style>
