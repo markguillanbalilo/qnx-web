@@ -1,8 +1,8 @@
 <template>
   <div id="log-in-page">
     <div class="row log-in">
-      <div class=" col-md-4"></div>
-      <div class=" col-md-4">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
         <div class="form-group">
           <form>
             <label>Username:</label>
@@ -36,7 +36,7 @@
           </form>
         </div>
       </div>
-      <div class=" col-md-4"></div>
+      <div class="col-md-4"></div>
     </div>
   </div>
 </template>
@@ -52,25 +52,23 @@ form {
   border-radius: 10px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   form {
     margin-top: 100px;
-    width:100%;
+    width: 100%;
   }
   label {
-    font-size:80%;
+    font-size: 80%;
   }
 
   input {
-    font-size:80%;
+    font-size: 80%;
   }
 
-  p, button {
-    font-size:90%;
+  p,
+  button {
+    font-size: 90%;
   }
-
-
-  
 }
 </style>
 

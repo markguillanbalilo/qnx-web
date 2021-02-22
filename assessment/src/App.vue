@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-        <router-view />
+    <router-view />
     <nav class="navbar" id="navigation">
       <a href=""
         ><img
@@ -18,12 +18,11 @@
     </nav>
 
     <footer class="footer">
-        <div class="copyright">
-          <p>&#169; Questronix Corporation</p>
-        </div>
-  </footer>
+      <div class="copyright">
+        <p>&#169; Questronix Corporation</p>
+      </div>
+    </footer>
   </div>
-
 </template>
 
 <style scoped>
@@ -61,18 +60,18 @@
 
 .footer {
   overflow: hidden;
-  height:60px;
+  height: 60px;
   background-color: rgb(22, 22, 22);
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .copyright {
   text-align: center;
   line-height: 60px;
-  color:gray;
+  color: gray;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .logo {
     display: none;
   }
@@ -82,14 +81,11 @@
   }
 
   .nav-item {
-    float:left;
+    float: left;
   }
 
   .navbar a {
     font-size: 80%;
-    
   }
-  
 }
-  
 </style>

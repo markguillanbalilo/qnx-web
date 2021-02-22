@@ -135,8 +135,7 @@ h1 {
   animation: 1s ease-out slide-title;
 }
 
-@media screen and (max-width:800px) {
-
+@media screen and (max-width: 800px) {
   .poster {
     margin-top: 50px;
   }
@@ -159,8 +158,6 @@ h1 {
   .caption {
     font-size: 90%;
   }
-  
 }
-
 </style>
 

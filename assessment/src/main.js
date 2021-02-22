@@ -19,16 +19,16 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 
 const routes = [
-  
-    {path:'/',  component: LandingPage},
-    {path:'/loginhere',  component: LogInPage},
-    {path:'/registerhere',  component: RegistrationPage},
-    {path:'/blogposts',  component: BlogPosts},
-    
+
+  { path: '/', component: LandingPage },
+  { path: '/loginhere', component: LogInPage },
+  { path: '/registerhere', component: RegistrationPage },
+  { path: '/blogposts', component: BlogPosts },
+
 ];
 
-const router = new VueRouter( {
-  routes: routes, mode:'history',
+const router = new VueRouter({
+  routes: routes, mode: 'history',
 });
 
 new Vue({

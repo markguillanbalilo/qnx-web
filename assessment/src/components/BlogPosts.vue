@@ -133,7 +133,7 @@
           <div class="sidebar">
             <h4>Archives</h4>
             <a href="#">November 2019</a><br />
-            <a href="#">December 2019</a><br><br>
+            <a href="#">December 2019</a><br /><br />
 
             <h4>Submit your article!</h4>
             <p>
@@ -218,18 +218,17 @@ export default {
   margin: 20px 0px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .blog-header {
-    height:250px;
+    height: 250px;
   }
   .blog-head {
     font-size: 200%;
     line-height: 300px;
   }
 
-  h2{
+  h2 {
     font-size: 150%;
-
   }
 
   .blog-title {
@@ -237,7 +236,7 @@ export default {
   }
 
   .blog-content {
-    font-size: 80%
+    font-size: 80%;
   }
 
   h4 {
@@ -250,14 +249,11 @@ export default {
 
   .social {
     font-size: 130%;
-
   }
 
   .social-links {
     font-size: 90%;
   }
-
-  
 }
 </style>
 

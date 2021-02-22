@@ -1,8 +1,8 @@
 <template>
   <div id="reg-page">
     <div class="page-title">
-        <h2 class="text-center title">Join us!</h2>
-      </div>
+      <h2 class="text-center title">Join us!</h2>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -67,7 +67,12 @@
               </div>
               <br />
               <label>Mobile Number: </label>
-              <input type="number" name="contact-number" class="form-control" required />
+              <input
+                type="number"
+                name="contact-number"
+                class="form-control"
+                required
+              />
               <label>Education: </label>
               <div class="form-group">
                 <select class="education">
@@ -107,7 +112,7 @@
         </div>
       </div>
     </div>
-    </div>   
+  </div>
 </template>
 
 <script>
@@ -144,7 +149,7 @@ input::-webkit-inner-spin-button {
 
 .reg-form {
   margin-left: 30px;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 input[type="submit"] {
@@ -154,17 +159,15 @@ input[type="submit"] {
 .page-title {
   margin-top: 50px;
   background-color: rgb(9, 9, 66);
-  color:azure;
+  color: azure;
   height: 100px;
-
 }
 
 .title {
   line-height: 100px;
-  
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .page-title {
     margin-top: 50px;
     height: 90px;
@@ -179,17 +182,15 @@ input[type="submit"] {
     margin-top: 40px;
   }
 
-  form, input {
+  form,
+  input {
     font-size: 80%;
   }
 
   form {
     margin-left: 0;
   }
-  
 }
-
-
 </style>
 
 
