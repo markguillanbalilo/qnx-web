@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar">
+    <nav class="navbar" id="navigation">
       <a href=""
         ><img
           src="https://questronix.com.ph/wp-content/uploads/2019/03/logoflyer.png"
@@ -21,7 +21,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  
+
+};
 </script>
 
 <style scoped>
@@ -30,17 +33,25 @@ export default {};
 }
 
 .navbar {
-  background-color: rgb(197, 197, 255);
+  background-color: rgb(236, 236, 236);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
 }
 
 .nav-item {
   float: right;
   text-align: center;
-  padding:10px;
-
+  padding: 10px;
+  text-decoration: none;
 }
 
 .nav-item:hover {
-  
+  cursor:pointer;
+  color:rgb(9, 9, 82);
+  border-bottom: 1px solid rgb(9, 9, 82);
 }
 </style>

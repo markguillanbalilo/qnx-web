@@ -3,6 +3,7 @@
     <div class="container">
       <div class="page-title">
         <h2 class="text-center">Join us!</h2>
+        </div>
         <div class="row page-content">
           <div class="col-md-6">
             <img
@@ -101,16 +102,16 @@
                   class="form-control"
                   required
                 />
-                <input
+                <span id="warning"></span>
+              </form>
+              <input
                   type="submit"
                   class="btn btn-primary"
                   v-on:click="greet"
                 />
-              </form>
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
 </template>
@@ -124,7 +125,13 @@ export default {
         document.getElementById("password").value !=
         document.getElementById("verify-password").value
       ) {
-        alert("Password does not match!");
+        document.getElementById("warning").innerHTML = "Password does not match!";
+
+      }
+
+      else {
+        document.getElementById("warning").innerHTML = "Password match!";
+
       }
     },
   },
@@ -154,7 +161,7 @@ input[type="submit"] {
 
 .page-content,
 .page-title {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 </style>
 

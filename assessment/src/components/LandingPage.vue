@@ -91,6 +91,7 @@ h1 {
 }
 .poster {
   width: 100%;
+  margin-top: 50px;
 }
 
 .overview {
