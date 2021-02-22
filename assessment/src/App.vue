@@ -15,17 +15,23 @@
         </a>
       </div>
     </nav>
+    <footer>
+      <div row>
+        <div col-md-4>
+          </div>
+        <div col-md-4>
+          <p>&#169; Questronix Corporation</p>
+          </div>
+        <div col-md-4>
+          </div>
+
+        </div> 
+
+    </footer>
 
     <router-view />
   </div>
 </template>
-
-<script>
-export default {
-  
-
-};
-</script>
 
 <style scoped>
 .logo {
@@ -54,4 +60,10 @@ export default {
   color:rgb(9, 9, 82);
   border-bottom: 1px solid rgb(9, 9, 82);
 }
+
+.nav-item:visited {
+  border-bottom: 1px solid rgb(9, 9, 82);
+
+}
+
 </style>

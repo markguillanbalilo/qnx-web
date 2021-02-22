@@ -66,15 +66,15 @@
             </div>
 
             <div class="embed-responsive embed-responsive-16by9 iframe">
-            <iframe
-              width="500"
-              height="300"
-              class="embed-responsive-item"
-              src="https://www.youtube.com/embed/w4OPtFCs_fw"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+              <iframe
+                width="500"
+                height="300"
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/w4OPtFCs_fw"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
             <p class="blog-content text-justify">
               Margaret Heffernan gave a number of great points on her talk about
@@ -177,7 +177,6 @@ export default {
 </script>
 
 <style scoped>
-
 .blog-header {
   background: linear-gradient(rgba(31, 30, 30, 0.6), rgba(31, 30, 30, 0.6)),
     url(https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -188,12 +187,11 @@ export default {
 @keyframes compress-title {
   0% {
     letter-spacing: 40px;
-    opacity: .5;
+    opacity: 0.5;
   }
   100% {
     letter-spacing: 20px;
     opacity: 1;
-
   }
 }
 .blog-head {
@@ -219,7 +217,5 @@ export default {
 .iframe {
   margin: 20px 0px;
 }
-
-
 </style>
 
