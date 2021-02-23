@@ -2,7 +2,7 @@
   <div id="app">
     <router-view />
     <nav class="navbar" id="navigation">
-      <a href=""
+      <a href="/"
         ><img
           src="https://questronix.com.ph/wp-content/uploads/2019/03/logoflyer.png"
           class="logo"

@@ -131,7 +131,6 @@ h1 {
 }
 
 .title-slide {
-  /* This section calls the slideInFromLeft animation we defined above */
   animation: 1s ease-out slide-title;
 }
 
