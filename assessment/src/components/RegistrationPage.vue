@@ -105,9 +105,14 @@
                 class="form-control"
                 required
               />
+              <span
+                toggle="#password-field"
+                class="fa fa-fw fa-eye field-icon toggle-password"
+              ></span
+              ><br />
               <span id="warning"></span>
             </form>
-            <input type="submit" class="btn btn-primary" v-on:click="greet" />
+            <input type="submit" class="btn btn-primary" v-on:click="verify" />
           </div>
         </div>
       </div>
@@ -119,7 +124,7 @@
 export default {
   el: "#reg-page",
   methods: {
-    greet: function () {
+    verify: function () {
       if (
         document.getElementById("password").value !=
         document.getElementById("verify-password").value
@@ -140,11 +145,22 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+@keyframes slide-photo {
+  0% {
+    transform: translateX(-40%);
+    opacity: 0.01;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
 .company-photo {
   width: 100%;
   box-shadow: 10px 10px 10px;
   margin-top: 130px;
   vertical-align: middle;
+  animation: 1s ease-out slide-photo;
 }
 
 .reg-form {

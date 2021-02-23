@@ -41,6 +41,7 @@
   </div>
 </template>
 
+
 <style scoped>
 .log-in {
   margin: 10%;

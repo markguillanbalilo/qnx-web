@@ -145,9 +145,13 @@
 
           <h4 class="social">Follow us:</h4>
           <div class="social-links">
-            <a href="https://twitter.com/" target="_blank"> <Twitter /></a>
-            <a href="https://www.facebook.com/" target="_blank"><Facebook /></a>
-            <a href="https://www.instagram.com/" target="_blank"
+            <a href="https://twitter.com/" target="_blank" class="link">
+              <Twitter
+            /></a>
+            <a href="https://www.facebook.com/" target="_blank" class="link"
+              ><Facebook
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank" class="link"
               ><Instagram
             /></a>
           </div>
@@ -205,9 +209,14 @@ export default {
   height: 300px;
 }
 
-.social-links .material-design-icon {
+.link {
   font-size: 200%;
   color: rgb(9, 9, 66);
+  margin: 3px;
+}
+
+.link:hover {
+  color: rgb(40, 40, 255);
 }
 
 .page-content {
